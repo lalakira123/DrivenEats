@@ -26,27 +26,30 @@
         <!-- Itens - Pratos -->
         <section class="itens">
             <h2>Primeiro, seu prato</h2>
-            <div class="escolhas">
+            <div class="escolhas pratos" data-identifier="dishes">
 
-                <div class="item">
+                <div class="item prato1" onclick="selecionarPrato('prato1','Fragon Yin Yang', 14.90)" data-identifier="food-option">
                     <img src="imagens/frango_yin_yang 1.png" alt="Frango Yin Yang">
-                    <h3>Frango Yin Yang</h3>
+                    <h3 data-identifier="food-title">Frango Yin Yang</h3>
                     <p>Um pouco de batata, um pouco de salada</p>
-                    <span>R$14,90</span>
+                    <span data-identifier="food-price">R$14,90</span>
+                    <ion-icon name="checkmark-circle-outline"></ion-icon>
                 </div>
 
-                <div class="item">
+                <div class="item prato2" onclick="selecionarPrato('prato2','Frango Yin Yang', 12.90)" data-identifier="food-option">
                     <img src="imagens/frango_yin_yang 1.png" alt="Frango Yin Yang">
-                    <h3>Frango Yin Yang</h3>
+                    <h3 data-identifier="food-title">Frango Yin Yang</h3>
                     <p>Um pouco de batata, um pouco de salada</p>
-                    <span>R$12,90</span>
-                </div>
+                    <span data-identifier="food-price">R$12,90</span>
+                    <ion-icon name="checkmark-circle-outline"></ion-icon>
+                </div> 
 
-                <div class="item">
+                <div class="item prato3" onclick="selecionarPrato('prato3', 'Frango Yin Yang', 15.90)" data-identifier="food-option">
                     <img src="imagens/frango_yin_yang 1.png" alt="Frango Yin Yang">
-                    <h3>Frango Yin Yang</h3>
+                    <h3 data-identifier="food-title">Frango Yin Yang</h3>
                     <p>Um pouco de batata, um pouco de salada</p>
-                    <span>R$15,90</span>
+                    <span data-identifier="food-price">R$15,90</span>
+                    <ion-icon name="checkmark-circle-outline"></ion-icon>
                 </div>
 
             </div>
@@ -55,27 +58,30 @@
         <!-- Itens - Bebidas -->
         <section class="itens">
             <h2>Agora, sua bebida</h2>
-            <div class="escolhas">
+            <div class="escolhas bebidas" data-identifier="drinks">
 
-                <div class="item">
+                <div class="item bebida1" onclick="selecionarBebida('bebida1', 'Coquinha gelada', 4.90)" data-identifier="food-option">
                     <img src="imagens/coquinha_gelada 1.png" alt="Coquinha Gelada">
-                    <h3>Coquinha gelada</h3>
+                    <h3 data-identifier="food-title">Coquinha gelada</h3>
                     <p>Lata 350ml</p>
-                    <span>R$4,90</span>
+                    <span data-identifier="food-price">R$4,90</span>
+                    <ion-icon name="checkmark-circle-outline"></ion-icon>
                 </div>
 
-                <div class="item">
+                <div class="item bebida2" onclick="selecionarBebida('bebida2', 'Coquinha gelada', 6.90)" data-identifier="food-option">
                     <img src="imagens/coquinha_gelada 1.png" alt="Coquinha Gelada">
-                    <h3>Coquinha gelada</h3>
+                    <h3 data-identifier="food-title">Coquinha gelada</h3>
                     <p>Lata 350ml</p>
-                    <span>R$6,90</span>
+                    <span data-identifier="food-price">R$6,90</span>
+                    <ion-icon name="checkmark-circle-outline"></ion-icon>
                 </div>
 
-                <div class="item">
+                <div class="item bebida3" onclick="selecionarBebida('bebida3', 'Coquinha gelada', 3.90)" data-identifier="food-option">
                     <img src="imagens/coquinha_gelada 1.png" alt="Coquinha Gelada">
-                    <h3>Coquinha gelada</h3>
+                    <h3 data-identifier="food-title">Coquinha gelada</h3>
                     <p>Lata 350ml</p>
-                    <span>R$3,90</span>
+                    <span data-identifier="food-price">R$3,90</span>
+                    <ion-icon name="checkmark-circle-outline"></ion-icon>
                 </div>
 
             </div>
@@ -84,27 +90,30 @@
         <!-- Itens - Sobremesas -->
         <section class="itens">
             <h2>Por fim, sua sobremesa</h2>
-            <div class="escolhas">
+            <div class="escolhas sobremesas" data-identifier="desserts">
 
-                <div class="item">
+                <div class="item sobremesa1" onclick="selecionarSobremesa('sobremesa1', 'Pudim', 7.90)" data-identifier="food-option">
                     <img src="imagens/pudim 1.png" alt="Pudim">
-                    <h3>Pudim</h3>
+                    <h3 data-identifier="food-title">Pudim</h3>
                     <p>Apenas pudim</p>
-                    <span>R$7,90</span>
+                    <span data-identifier="food-price">R$7,90</span>
+                    <ion-icon name="checkmark-circle-outline"></ion-icon>
                 </div>
 
-                <div class="item">
+                <div class="item sobremesa2" onclick="selecionarSobremesa('sobremesa2', 'Pudim', 8.90)" data-identifier="food-option">
                     <img src="imagens/pudim 1.png" alt="Pudim">
-                    <h3>Pudim</h3>
+                    <h3 data-identifier="food-title">Pudim</h3>
                     <p>Apenas pudim</p>
-                    <span>R$8,90</span>
+                    <span data-identifier="food-price">R$8,90</span>
+                    <ion-icon name="checkmark-circle-outline"></ion-icon>
                 </div>
 
-                <div class="item">
+                <div class="item sobremesa3" onclick="selecionarSobremesa('sobremesa3', 'Pudim', 4.90)" data-identifier="food-option">
                     <img src="imagens/pudim 1.png" alt="Pudim">
-                    <h3>Pudim</h3>
+                    <h3 data-identifier="food-title">Pudim</h3>
                     <p>Apenas pudim</p>
-                    <span>R$4,90</span>
+                    <span data-identifier="food-price">R$4,90</span>
+                    <ion-icon name="checkmark-circle-outline"></ion-icon>
                 </div>
 
             </div>
@@ -118,7 +127,13 @@
             <p>Selecione os 3 itens</p>
             <p>para fechar o pedido</p>
         </button>
+    </a>
     </footer>
 
+    <!-- Icones -->
+    <script src="https://unpkg.com/ionicons@5.4.0/dist/ionicons.js"></script>
+
+    <!-- JS -->
+    <script src="js/script.js"></script>
 </body>
 </html>
