@@ -136,7 +136,7 @@ footer {
     right: 0;
 }
 
-.retangulo {
+.retangulo-desabilitado {
     background-color: #CBCBCB;
     width: 364px;
     height: 61px;
@@ -147,9 +147,21 @@ footer {
     font-weight: 400;
 }
 
+.retangulo-habilitado {
+    background-color: #32B72F;
+    width: 364px;
+    height: 61px;
+    border: none;
+    border-radius: 50px;
+    color: #FFFFFF ;
+    font-size: 20px;
+    font-weight: 400;
+    z-index: 2;
+}
+
 /* Botão Fechar Pedido Habilitado */
- .pedido-habilitado {
-     background-color: #32B72F;
+ .escondido {
+     display: none;
  }
 
 

@@ -5,6 +5,7 @@ let preçoBebida = null
 let nomeSobremesa = null
 let preçoSobremesa = null
 let preçoTotal = null
+let urlWhats = null
 
 function selecionarPrato(numPrato, nome, preço) {
     const selecionado = document.querySelector(".pratos .selecionado")
@@ -50,11 +51,14 @@ function selecionarSobremesa(numSobremesa, nome, preço) {
 
 function habilitarPedido() {
     if (nomePrato != null && nomeBebida != null && nomeSobremesa != null) {
-        const botao = document.querySelector(".retangulo")
-        botao.classList.add("pedido-habilitado")
+        const botaoApagado = document.querySelector(".retangulo-desabilitado")
+        botaoApagado.classList.add("escondido")
+        const botao = document.querySelector(".retangulo-habilitado")
+        botao.classList.remove("escondido")
         botao.innerHTML = "Fechar Pedido"
         somarPreço(preçoPrato, preçoBebida, preçoSobremesa)
     }
+    mandarMensagem()
 }
 
 function somarPreço(preço1, preço2, preço3) {
@@ -62,3 +66,14 @@ function somarPreço(preço1, preço2, preço3) {
     preçoTotal = total.toFixed(2)
 }
 
+function mandarMensagem() {
+    let mensagem = "Olá, gostaria de fazer o pedido:" +
+                    "\n- Prato: " + nomePrato + 
+                    "\n- Bebida: " + nomeBebida +
+                    "\n- Sobremesa: " + nomeSobremesa + 
+                    "\nTotal: R$ " + preçoTotal
+    
+    let mensagemCodificada = encodeURIComponent(mensagem)
+    mensagemCodificada = "https://wa.me/5511960595789?text=" + mensagemCodificada
+    urlWhats = mensagemCodificada
+}
