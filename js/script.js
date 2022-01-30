@@ -77,3 +77,22 @@ function mandarMensagem() {
     mensagemCodificada = "https://wa.me/5511960595789?text=" + mensagemCodificada
     urlWhats = mensagemCodificada
 }
+
+function confirmarPedido() {
+    const nomeUm = document.querySelector(".um p")
+    nomeUm.innerHTML = nomePrato
+    const precoUm = document.querySelector(".um span")
+    precoUm.innerHTML = preçoPrato
+    const nomeDois = document.querySelector(".dois p")
+    nomeDois.innerHTML = nomeBebida
+    const precoDois = document.querySelector(".dois span")
+    precoDois.innerHTML = preçoBebida
+    const nomeTres = document.querySelector(".tres p")
+    nomeTres.innerHTML = nomeSobremesa
+    const precoTres = document.querySelector(".tres span")
+    precoTres.innerHTML = preçoSobremesa
+    const total = document.querySelector(".total span")
+    total.innerHTML = "R$ " + preçoTotal
+    const escondido = document.querySelector(".confirmar-pedidos")
+    escondido.classList.remove("escondido")
+}

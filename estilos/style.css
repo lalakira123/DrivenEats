@@ -159,10 +159,75 @@ footer {
     z-index: 2;
 }
 
-/* Botão Fechar Pedido Habilitado */
- .escondido {
-     display: none;
+ /* Confirmar Pedido */
+ .confirmar-pedidos {
+     position: fixed;
+     z-index: 3;
+     right: 0;
+     left: 0;
+     bottom: 30%;
+     background-color: #50D074;
+     margin: 0 18px;
+     border-radius: 9px;
+     display: flex;
+     flex-direction: column;
+     align-items: center;
+     padding: 21px 25px 0 25px;
  }
+
+ .confirmar-pedidos h4 {
+     font-size: 22px;
+     font-weight: 700;
+     color: #FFFFFF;
+     padding-bottom: 20px;
+ }
+
+ .pedidos {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    font-size: 22px;
+    font-weight: 400;
+    color: #FFFFFF;
+    padding-bottom: 20px;
+ }
+
+ .pedidos .pedido {
+     display: flex;
+     justify-content: space-between;
+     padding: 5px;
+ }
+
+ .pedidos .total {
+     font-weight: 700;
+     display: flex;
+     justify-content: space-between;
+     padding: 5px;
+ }
+
+ .botao-confirma{
+     border-radius: 100px;
+     height: 52px;
+     font-size: 22px;
+     font-weight: 700;
+     background-color: #FFFFFF;
+     color: #50D074;
+     border: none;
+ }
+
+ .botao-cancela {
+     font-size: 20px;
+     font-weight: 700;
+     border: none;
+     background-color: #50D074;
+     color: #FFFFFF;
+     padding: 14px;
+ }
+
+ /* Botão Fechar Pedido Habilitado */
+ .escondido {
+    display: none;
+}
 
 
 

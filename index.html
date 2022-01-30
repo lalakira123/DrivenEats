@@ -128,9 +128,43 @@
             <p>para fechar o pedido</p>
         </button>
         
-        <button class="retangulo-habilitado escondido" onclick="location.href=urlWhats;">
+        <button class="retangulo-habilitado escondido" onclick="confirmarPedido()">
         </button>
     </footer>
+
+    <!-- Tela de Confirmação -->
+    <section class="confirmar-pedidos escondido" data-identifier="confirmation-dialog">  
+        <h4>Confirme seu pedido</h4>
+
+        <!-- Pedidos -->
+        <div class="pedidos">
+            <div class="pedido um">
+                <p></p>
+                <span></span>
+            </div>
+
+            <div class="pedido dois">
+                <p></p>
+                <span></span>
+            </div>
+
+            <div class="pedido tres">
+                <p></p>
+                <span></span>
+            </div>
+
+            <div class="total">
+                <p>TOTAL</p>
+                <span></span>
+            </div>
+        </div>
+
+        <!-- Botões de Confirmação -->
+        <button class="botao-confirma" onclick="location.href=urlWhats;">Tudo certo, pode pedir!</button>
+        <a href="index.html">
+            <button class="botao-cancela">Cancelar</button>
+        </a>
+    </section>
 
     <!-- Icones -->
     <script src="https://unpkg.com/ionicons@5.4.0/dist/ionicons.js"></script>
